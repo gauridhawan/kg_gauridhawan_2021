@@ -19,6 +19,12 @@ public class main {
 
     }
 
+    /**
+     * Method to determine whether one to one mapping exists between input strings
+     * @param s1
+     * @param s2
+     * @return true if one to one mapping exists, false otherwise
+     */
     public static boolean hasMapping(String s1, String s2){
 
         // if their lengths are unequal

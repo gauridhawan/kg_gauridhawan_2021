@@ -6,6 +6,11 @@ public class main {
 
     public static void main(String[] args){
 
+        if(args.length <2){
+            System.out.println("Invalid number of arguments.");
+            return;
+        }
+
         String s1 = args[0];
         String s2 = args[1];
 
@@ -17,7 +22,7 @@ public class main {
     public static boolean hasMapping(String s1, String s2){
 
         // if their lengths are unequal
-        if(s1.length() != s2.length()){
+        if((s1.length() != s2.length()) || (s1==null) || (s2==null) ){
             return false;
         }
         Map<Character,Character> map = new HashMap<>();
